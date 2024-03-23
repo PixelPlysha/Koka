@@ -7,4 +7,3 @@ import { useBurger } from './components/burger.js';
 
 useTheme();
 useBurger();
-
