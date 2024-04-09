@@ -9,6 +9,8 @@ import {
   useTestimonialsSlider,
 } from './components/home/slider.js';
 
+
+
 useTheme();
 useBurger();
 useInsightSlider();
