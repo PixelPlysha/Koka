@@ -16,6 +16,8 @@ export const useInsightSlider = () => {
   });
 };
 
+
+
 export const useTestimonialsSlider = () => {
   new Swiper('.testimonials__slider', {
     modules: [Navigation],
@@ -28,3 +30,33 @@ export const useTestimonialsSlider = () => {
     },
   });
 };
+
+
+export const useAttentionSlider = () => {
+    new Swiper('.attention__slider', {
+      slidesPerView: 'auto',
+      spaceBetween: 32,
+      loop: true,
+      
+      breakpoints: {
+        1250: {
+          centeredSlides: false,
+        },
+      },
+    });
+  };
+
+
+  export const useTeamSlider = () => {
+    new Swiper('.team__slider', {
+      slidesPerView: 'auto',
+      spaceBetween: 32,
+      loop: true,
+      centeredSlides: true,
+      breakpoints: {
+        1250: {
+          centeredSlides: false,
+        },
+      },
+    });
+  };

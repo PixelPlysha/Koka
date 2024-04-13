@@ -8,6 +8,7 @@ export default defineConfig({
   base: '/Koka/',
   server: {
     port: 3000,
+    open: true,
   },
   publicDir: './src/assets',
   build: {
@@ -18,6 +19,7 @@ export default defineConfig({
         main: './src/index.html',
         pricing: './src/pricing.html',
         contact: './src/contact.html',
+        about: './src/about.html',
       },
     },
   },
