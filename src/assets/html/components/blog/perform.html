@@ -1,0 +1,163 @@
+<section class="perform">
+  <div class="container perform__container">
+    <h2 class="perform__title heading-h2">
+      How we perform long- <br />
+      running tasks using AWS <br />
+      services
+    </h2>
+
+    <div class="perform__comment">
+      <address class="perform__comment-author">
+        <img
+          width="56"
+          height="56"
+          loading="lazy"
+          class="perform__comment-author-avatar"
+          src="./assets/images/testimonials-author-1.jpg"
+          alt="foto of author"
+        />
+        <div class="perform__comment-author-info">
+          <h3 class="perform__comment-author-name text-p-medium">
+            Renee Wells
+          </h3>
+          <h5 class="perform__comment-author-position text-p-default">
+            Product Designer, Quotient
+          </h5>
+        </div>
+      </address>
+      <p class="perform__comment-descr text-p-medium">
+        10 min read November 10, 2023
+      </p>
+    </div>
+    <img
+      class="perform__img"
+      loading="lazy"
+      src="./assets/images/perform-table.jpg"
+      width="940"
+      height="545"
+      alt="working space"
+    />
+    <p class="perform__text text-p-medium">
+      Depending on the input, this can result in using a lot of processing power
+      and time. The whole process would <br />
+      take approximately 5 seconds to return a result to the client. Keep in
+      mind we’re talking about 1 item, a contact <br />
+      from a contact book. After a while, a new requirement is added. Solution
+      must support companies that <br />
+      manage their contacts organized in files. We agreed to develop a web
+      application that would support upload <br />
+      of dataset files, like .csv. The new web application should support third
+      party integrations. Some of them are <br />
+      the ESP/CRM services, like Mailchimp. User does not need to see the result
+      immediately. System can later <br />
+      notify the user about the result, when the process finishes. This
+      information is the key that we need to <br />
+      leverage on when developing our solution. So here’s how we did it.
+    </p>
+    <h3 class="perform__subtitle heading-h3">Initial approach</h3>
+    <p class="perform__subtext text-p-medium">
+      Our initial approach went like this: The web application would read a .csv
+      file line-by-line and submit an array <br />
+      of entries to the backend REST API. Processing is in real time,
+      immediately after the user makes a request for <br />
+      the process to start, he expects a result. Another approach is to apply
+      vertical scaling to AWS architecture. <br />
+      Meaning we used larger, more expensive instances that have more RAM and
+      processing power. This system <br />
+      worked well for smaller datasets, maybe up to 5k entries, but for larger
+      datasets multiple problems arose. This <br />
+      solution is prone to failure due to long request time. Also, because of
+      some 3rd party services that aren’t <br />
+      optimized for large scale loads or they don’t have batch endpoints. 3rd
+      party services also tend to protect <br />
+      their architecture from making a huge bill on their end. The whole process
+      was done in real-time. The request <br />
+      can take a lot of time hanging in there while the backend would do all the
+      work and return the result to the <br />
+      client. The request was limited to 300 seconds (at time of writing the
+      article) before AWS would cancel it… <br />
+      Also I need to mention that the user has to wait a few minutes to see the
+      results. They can’t use the app <br />
+      during the process, which makes for a bad user experience.
+    </p>
+
+    <div class="perform__contact">
+      <div class="perform__contact-img">
+        <img
+          loading="lazy"
+          src="./assets/images/perfom-id.jpg"
+          alt="photo of Renee Wells"
+          width="200"
+          height="200"
+        />
+      </div>
+      <div class="perform__contact-socials">
+        <ul class="perform__contact-socials-list">
+          <li class="perform__contact-socials-item">
+            <a class="perform__contact-socials-link" href="#">
+              <img
+                loading="lazy"
+                src="./assets/icons/about/social-icons/facebook.svg"
+                alt="Facebook"
+                width="15"
+                height="26"
+              />
+            </a>
+          </li>
+          <li class="perform__contact-socials-item">
+            <a class="perform__contact-socials-link" href="#">
+              <img
+                loading="lazy"
+                src="./assets/icons/about/social-icons/tviter.svg"
+                alt="Tvitter"
+                width="16"
+                height="14"
+              />
+            </a>
+          </li>
+          <li class="perform__contact-socials-item">
+            <a class="perform__contact-socials-link" href="#">
+              <img
+                loading="lazy"
+                src="./assets/icons/about/social-icons/linkedin.svg"
+                alt="Linkedin"
+                width="18"
+                height="17"
+              />
+            </a>
+          </li>
+          <li class="perform__contact-socials-item">
+            <a class="perform__contact-socials-link" href="#">
+              <img
+                loading="lazy"
+                src="./assets/icons/about/social-icons/instagram.svg"
+                alt="Instagramm"
+                width="18"
+                height="18"
+              />
+            </a>
+          </li>
+          <li class="perform__contact-socials-item--last">
+            <a class="perform__contact-socials-link--last" href="#"
+              >Share this article</a
+            >
+          </li>
+        </ul>
+        <div class="perform__contact-info">
+          <p class="perform__contact-info-subtitle text-p-default">
+            Written by
+          </p>
+          <h5 class="perform__contact-info-title heading-h5">Renee Wells</h5>
+          <p class="perform__contact-info-subtext text-p-default">
+            Product Designer, Quotient
+          </p>
+          <p class="perform__contact-info-text text-p-medium">
+            Skilled in React Native, iOS and backend, Toni has a demonstrated <br>
+            knowledge of the information technology and services industry, with
+            plenty <br> of hands-on experience to back it up.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,225 @@
+.perform {
+  padding: 80px 0 160px;
+
+  @include small-tablet {
+    padding: 60px 0 120px;
+  }
+  @include mobile {
+    padding: 40px 0 80px;
+  }
+
+  &__container {
+    max-width: 940px;
+  }
+  &__title {
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: -0.04em;
+    color: var(--neutral-color-100);
+
+    @include tablet {
+      text-align: center;
+
+      br {
+        display: none;
+      }
+    }
+  }
+
+  &__comment {
+    padding: 100px 0 24px;
+    @include flex-all-between;
+
+    @include tablet {
+      padding: 60px 0 15px;
+    }
+    @include mobile {
+      padding: 40px 0 10px;
+    }
+    &-text {
+      margin-bottom: 40px;
+      font-weight: 500;
+      line-height: 130%;
+      letter-spacing: -0.03em;
+      color: var(--neutral-color-100);
+
+    }
+    &-author {
+      @include flex-align-center;
+      font-style: normal;
+      gap: 24px;
+
+      &-avatar {
+        border-radius: 50%;
+        overflow: hidden;
+      }
+
+      &-name {
+        font-weight: 600;
+        line-height: 144%;
+        color: var(--neutral-color-100);
+      }
+
+      &-position {
+        font-weight: 500;
+        line-height: 162%;
+        color: var(--neutral-color-150);
+      }
+    }
+    &-descr {
+      font-weight: 500;
+      line-height: 150%;
+      color: var(--neutral-color-150);
+    }
+  }
+
+  &__text {
+    margin-top: 80px;
+    margin-bottom: 56px;
+    font-weight: 400;
+    line-height: 178%;
+    color: var(--neutral-color-100);
+
+    @include tablet {
+      text-align: center;
+
+      br {
+        display: none;
+      }
+    }
+
+    @include small-tablet {
+        margin-bottom: 30px;
+        margin-top: 50px;
+      }
+    @include mobile {
+        margin-bottom: 20px;
+        margin-top: 30px;
+      }
+  }
+
+  &__subtitle {
+    font-weight: 600;
+    line-height: 120%;
+    color: var(--neutral-color-100);
+
+    @include tablet {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__subtext {
+    margin-top: 24px;
+    margin-bottom: 56px;
+    font-weight: 400;
+    line-height: 178%;
+    color: var(--neutral-color-150);
+
+    @include tablet {
+      text-align: center;
+
+      br {
+        display: none;
+      }
+    }
+  }
+
+  &__contact {
+    display: flex;
+
+    &-img {
+      margin-right: 48px;
+      max-width: 200px;
+      max-height: 200px;
+
+      @include mobile {
+        display: none;
+      }
+    }
+
+    &-socials {
+      &-list {
+        display: flex;
+
+        @include mobile {
+          @include flex-all-center;
+        }
+      }
+
+      &-item {
+        @include flex-all-center;
+        margin: 0 22px 0 22px;
+        width: 32px;
+        height: 32px;
+        background-color: #eaebf0;
+        border-radius: 50%;
+
+        &:first-child {
+          margin: 0 22px 0 0;
+        }
+
+        @include mobile {
+            margin: 0 10px 0 10px;
+
+            &:first-child {
+                margin: 0 10px 0 10px;
+              }
+        }
+        @include small-mobile {
+            margin: 0 6px 0 6px;
+
+            &:first-child {
+                margin: 0 6px 0 6px;
+              }
+        }
+      }
+
+      &-link {
+        transition: var(--transition);
+        opacity: 0.8;
+
+        &--last {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 162%;
+          color: var(--neutral-color-100);
+        }
+      }
+    }
+
+    &-info {
+      @include mobile {
+        text-align: center;
+      }
+      &-subtitle {
+        margin-top: 14px;
+        margin-bottom: 16px;
+        font-weight: 400;
+        line-height: 150%;
+        color: #7e8492;
+      }
+
+      &-title {
+        margin-bottom: 16px;
+        font-weight: 600;
+        line-height: 131%;
+        letter-spacing: -0.03em;
+        color: var(--neutral-color-100);
+      }
+      &-subtext {
+        margin-bottom: 16px;
+        font-weight: 400;
+        line-height: 150%;
+        color: #7e8492;
+      }
+      &-text {
+        margin-bottom: 16px;
+        font-weight: 400;
+        line-height: 150%;
+        color: var(--neutral-color-100);
+      }
+    }
+  }
+}
