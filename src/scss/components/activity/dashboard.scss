@@ -1,0 +1,38 @@
+.dashboard {
+  padding: 168px 0 159px;
+  background: #18181d;
+
+  @include tablet {
+    padding: 128px 0 129px;
+  }
+  @include small-tablet {
+    padding: 108px 0 109px;
+  }
+  @include mobile {
+    padding: 98px 0 99px;
+  }
+  @include small-mobile {
+    padding: 78px 0 79px;
+  }
+
+  &__top {
+    @include flex-all-between;
+    @include mini-desktop {
+      gap: 15px;
+    }
+    &-title {
+      margin-top: 24px;
+      margin-bottom: 24px;
+      font-weight: 600;
+      line-height: 120%;
+      color: #fff;
+    }
+
+    &-descr {
+      
+      font-weight: 500;
+      line-height: 178%;
+      color: #7e8492;
+    }
+  }
+}
